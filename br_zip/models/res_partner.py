@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import re
-from odoo import models, api
+from flectra import models, api
 
 
 class ResPartner(models.Model):

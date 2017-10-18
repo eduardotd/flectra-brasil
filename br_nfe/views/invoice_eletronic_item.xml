@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
     <record id="invoice_eletronic_item_icms_inter" model="ir.ui.view">
         <field name="name">invoice.eletronic.item.form</field>
         <field name="model">invoice.eletronic.item</field>
@@ -69,4 +69,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>

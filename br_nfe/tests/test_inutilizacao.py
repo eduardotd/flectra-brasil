@@ -5,8 +5,8 @@
 import os
 import base64
 from mock import patch
-from odoo.tests.common import TransactionCase
-from odoo.exceptions import UserError
+from flectra.tests.common import TransactionCase
+from flectra.exceptions import UserError
 from pytrustnfe.xml import sanitize_response
 
 
@@ -151,8 +151,8 @@ class TestInutilizacao(TransactionCase):
                 (2, number.id, 0),
             ])
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
     def test_inutilizacao_ok(self, inutilizar, validar):
         validar.return_value = ''
         with open(os.path.join(self.caminho,
@@ -191,8 +191,8 @@ class TestInutilizacao(TransactionCase):
             [('invoice_id', '=', invoice.id)])
         self.assertEqual(inv_eletr.numero_nfe, '6')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
     def test_inutilizacao_2_sequences(self, inutilizar, validar):
         validar.return_value = ''
         with open(os.path.join(self.caminho,
@@ -230,8 +230,8 @@ class TestInutilizacao(TransactionCase):
             [('invoice_id', '=', invoice.id)])
         self.assertEqual(inv_eletr.numero_nfe, '10')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.inutilized_nfe.inutilizar_nfe')
     def test_inutilizacao_return_ok(self, inutilizar, validar):
         validar.return_value = ''
         with open(os.path.join(self.caminho,
@@ -270,7 +270,7 @@ class TestInutilizacao(TransactionCase):
             [('invoice_id', '=', invoice.id)])
         self.assertEqual(inv_eletr.numero_nfe, '6')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_inutilizacao_wrong_sqnc(self, validar):
         validar.return_value = ''
         wizard = self.env['wizard.inutilization.nfe.numeration'].create(dict(
@@ -344,7 +344,7 @@ class TestInutilizacao(TransactionCase):
         with self.assertRaises(UserError):
             wizard.action_inutilize_nfe()
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_inutilizacao_user_error(self, validar):
         validar.return_value = ''
         wizard = self.env['wizard.inutilization.nfe.numeration'].create(dict(

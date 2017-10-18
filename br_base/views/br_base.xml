@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <template id="assets_backend" name="trust_base assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="/br_base/static/src/css/br_base.css"/>
@@ -17,4 +17,4 @@
              </div>
          </xpath>
      </template>
-</odoo>
+</flectra>

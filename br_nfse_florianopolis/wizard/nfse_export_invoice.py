@@ -11,8 +11,8 @@ import os.path
 from jinja2 import Environment, FileSystemLoader
 from zipfile import ZipFile
 from io import BytesIO
-from odoo import api, fields, models
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.exceptions import UserError
 
 
 class NfseExportInvoice(models.TransientModel):
@@ -86,7 +86,7 @@ class NfseExportInvoice(models.TransientModel):
             'content': xml}
 
     def _save_zip(self, xmls):
-        tmp = '/tmp/odoo/nfse-export/'
+        tmp = '/tmp/flectra/nfse-export/'
         try:
             os.makedirs(tmp)
         except:

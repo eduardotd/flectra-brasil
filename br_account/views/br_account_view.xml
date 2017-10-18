@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <menuitem id="menu_br_account" name="Brasil" parent="account.menu_finance_configuration" sequence="0"/>
 
@@ -370,4 +370,4 @@
 
     <menuitem id="menu_action_document_serie_form" name="Serie de Documento Fiscal" parent="menu_br_account" action="action_br_account_document_serie_form"/>
 
-</odoo>
+</flectra>

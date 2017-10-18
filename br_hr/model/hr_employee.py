@@ -8,9 +8,9 @@
 
 from datetime import datetime
 
-from odoo import api, fields, models
-from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
-from odoo.exceptions import ValidationError
+from flectra import api, fields, models
+from flectra.tools import DEFAULT_SERVER_DATE_FORMAT
+from flectra.exceptions import ValidationError
 
 
 class HrEmployee(models.Model):

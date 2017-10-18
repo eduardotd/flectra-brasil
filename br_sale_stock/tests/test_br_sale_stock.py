@@ -2,7 +2,7 @@
 # © 2016 Danimar Ribeiro, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.addons.sale.tests.test_sale_common import TestSale
+from flectra.addons.sale.tests.test_sale_common import TestSale
 
 
 class TestBrSaleStock(TestSale):

@@ -6,8 +6,8 @@ import base64
 import logging
 import re
 from datetime import datetime
-from odoo import api, fields, models
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.exceptions import UserError
 _logger = logging.getLogger(__name__)
 try:
     from pytrustnfe.nfe import recepcao_evento_carta_correcao

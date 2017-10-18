@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
     <record model="ir.ui.view" id="view_wizard_carta_correcao_nfe">
         <field name="name">wizard.carta.correcao.eletronica</field>
         <field name="model">wizard.carta.correcao.eletronica</field>
@@ -37,4 +37,4 @@
         target="new"
         key2="client_action_multi"/>
 
-</odoo>
+</flectra>

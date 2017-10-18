@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="view_br_account_product_fiscal_classification_form" model="ir.ui.view">
         <field name="name">br_account.product.fiscal.classification.form</field>
@@ -80,4 +80,4 @@
     <menuitem id="menu_br_account_product_fiscal_classification" name="Classificações Fiscais (NCM)"
         parent="menu_br_account" sequence="0" action="action_br_account_product_fiscal_classification"/>
 
-</odoo>
+</flectra>

@@ -4,9 +4,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import re
-from odoo import models, fields, api, _
-from odoo.addons.br_base.tools import fiscal
-from odoo.exceptions import UserError
+from flectra import models, fields, api, _
+from flectra.addons.br_base.tools import fiscal
+from flectra.exceptions import UserError
 
 
 class CrmLead(models.Model):
@@ -46,7 +46,7 @@ class CrmLead(models.Model):
     def _validate_ie_param(self, uf, inscr_est):
         try:
             mod = __import__(
-                'odoo.addons.br_base.tools.fiscal',
+                'flectra.addons.br_base.tools.fiscal',
                 globals(), locals(), 'fiscal')
 
             validate = getattr(mod, 'validate_ie_%s' % uf)

@@ -4,14 +4,14 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-from odoo import api, fields, models
-from odoo.addons import decimal_precision as dp
-from odoo.addons.br_account.models.cst import CST_ICMS
-from odoo.addons.br_account.models.cst import CSOSN_SIMPLES
-from odoo.addons.br_account.models.cst import CST_IPI
-from odoo.addons.br_account.models.cst import CST_PIS_COFINS
-from odoo.addons.br_account.models.cst import ORIGEM_PROD
-from odoo.addons.br_account.models.res_company import COMPANY_FISCAL_TYPE
+from flectra import api, fields, models
+from flectra.addons import decimal_precision as dp
+from flectra.addons.br_account.models.cst import CST_ICMS
+from flectra.addons.br_account.models.cst import CSOSN_SIMPLES
+from flectra.addons.br_account.models.cst import CST_IPI
+from flectra.addons.br_account.models.cst import CST_PIS_COFINS
+from flectra.addons.br_account.models.cst import ORIGEM_PROD
+from flectra.addons.br_account.models.res_company import COMPANY_FISCAL_TYPE
 
 
 class AccountInvoiceLine(models.Model):

@@ -8,8 +8,8 @@ import base64
 import logging
 from datetime import date, datetime, timedelta
 from dateutil.relativedelta import relativedelta
-from odoo import api, fields, models
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
+from flectra import api, fields, models
+from flectra.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
 
 _logger = logging.getLogger(__name__)
 

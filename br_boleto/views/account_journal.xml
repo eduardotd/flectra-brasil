@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="view_br_account_journal_form" model="ir.ui.view">
         <field name="name">view.br_account_journal.form</field>
@@ -23,4 +23,4 @@
         </field>
     </record>
  
-</odoo>
+</flectra>

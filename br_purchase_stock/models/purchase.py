@@ -3,8 +3,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-from odoo import api, fields, models
-from odoo.addons import decimal_precision as dp
+from flectra import api, fields, models
+from flectra.addons import decimal_precision as dp
 
 
 class PurchaseOrder(models.Model):

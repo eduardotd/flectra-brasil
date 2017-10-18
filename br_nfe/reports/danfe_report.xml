@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<odoo>
+<flectra>
 
     <!--
     Marcado para remoção deste danfe na versão 11
@@ -631,7 +631,7 @@
         <div class="footer">
             <div class="row" style="font-size:10px">
                 Página <span class="page"/> de <span class="topage"/> ----
-                <span style="font-size:10px">Danfe gerado com Odoo Brasil - Software open source - saiba mais em <a href="http://www.trustcode.com.br/odoo-open-source">http://www.trustcode.com.br/odoo-open-source</a></span>
+                <span style="font-size:10px">Danfe gerado com Odoo Brasil - Software open source - saiba mais em <a href="http://www.trustcode.com.br/flectra-open-source">http://www.trustcode.com.br/flectra-open-source</a></span>
             </div>
         </div>
     </template>
@@ -645,4 +645,4 @@
         </t>
     </template>
 
-</odoo>
+</flectra>

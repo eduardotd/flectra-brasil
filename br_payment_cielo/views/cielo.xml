@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <template id="cielo_acquirer_button">
         <form t-if="checkout_url" t-att-action="checkout_url" method="post" target="_self">
             <input type="hidden" name="merchant_id" t-att-value="merchant_id" />
@@ -9,4 +9,4 @@
         </form>
     </template>
 
-</odoo>
+</flectra>

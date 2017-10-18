@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="br_account_chart_template" model="account.chart.template">
         <field name="property_account_receivable_id" ref="id_1_1_2_01_001" />
@@ -219,4 +219,4 @@
         <field ref="br_account_chart_template" name="chart_template_id"/>
     </record>
 
-</odoo>
+</flectra>

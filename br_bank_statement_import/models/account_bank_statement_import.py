@@ -6,8 +6,8 @@ import io
 import logging
 
 
-from odoo import fields, models
-from odoo.exceptions import UserError
+from flectra import fields, models
+from flectra.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
 

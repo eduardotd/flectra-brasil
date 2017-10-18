@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <!-- Delivery Carriers Vehicle -->
     <record id="br_delivery_carrier_vehicle_form" model="ir.ui.view">
         <field name="name">br_delivery.carrier.vehicle.form</field>
@@ -59,4 +59,4 @@
 
     <menuitem name="Veículo" id="menu_br_delivery_carrier_vehicle_form" parent="delivery.menu_delivery" action="action_br_delivery_carrier_vehicle_form" sequence="10" />
 
-</odoo>
+</flectra>

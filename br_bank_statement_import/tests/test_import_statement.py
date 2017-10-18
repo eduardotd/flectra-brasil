@@ -4,8 +4,8 @@
 
 import os
 import base64
-from odoo.tests.common import TransactionCase
-from odoo.exceptions import UserError
+from flectra.tests.common import TransactionCase
+from flectra.exceptions import UserError
 
 
 class TestImportStatement(TransactionCase):

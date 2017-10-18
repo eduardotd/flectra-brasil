@@ -4,7 +4,7 @@
 
 import base64
 
-from odoo.addons.br_cnab.tests.test_cnab_common import TestCnab
+from flectra.addons.br_cnab.tests.test_cnab_common import TestCnab
 
 
 class TestCnabSicoob(TestCnab):

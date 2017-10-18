@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="base.br" model="res.country">
         <field name="address_format" eval="'%(street)s, %(number)s - %(street2)s\n%(district)s\n%(zip)s - %(city_name)s - %(state_code)s\n%(country_name)s'" />
@@ -26,4 +26,4 @@
         <field name="view_id" ref="view_br_base_city_tree"/>
     </record>
 
-</odoo>
+</flectra>

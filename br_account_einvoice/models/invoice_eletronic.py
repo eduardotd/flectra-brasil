@@ -7,15 +7,15 @@ import base64
 import copy
 from datetime import datetime, timedelta
 import dateutil.relativedelta as relativedelta
-from odoo.exceptions import UserError
-from odoo import api, fields, models, tools
-from odoo.addons import decimal_precision as dp
-from odoo.addons.br_account.models.cst import CST_ICMS
-from odoo.addons.br_account.models.cst import CSOSN_SIMPLES
-from odoo.addons.br_account.models.cst import CST_IPI
-from odoo.addons.br_account.models.cst import CST_PIS_COFINS
-from odoo.addons.br_account.models.cst import ORIGEM_PROD
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DATETIME_FORMAT
+from flectra.exceptions import UserError
+from flectra import api, fields, models, tools
+from flectra.addons import decimal_precision as dp
+from flectra.addons.br_account.models.cst import CST_ICMS
+from flectra.addons.br_account.models.cst import CSOSN_SIMPLES
+from flectra.addons.br_account.models.cst import CST_IPI
+from flectra.addons.br_account.models.cst import CST_PIS_COFINS
+from flectra.addons.br_account.models.cst import ORIGEM_PROD
+from flectra.tools import DEFAULT_SERVER_DATETIME_FORMAT as DATETIME_FORMAT
 
 
 STATE = {'edit': [('readonly', False)]}

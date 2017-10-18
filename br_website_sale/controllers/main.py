@@ -3,12 +3,12 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import re
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 from werkzeug.exceptions import Forbidden
-import odoo.addons.website_sale.controllers.main as main
-from odoo.addons.br_base.tools.fiscal import validate_cnpj, validate_cpf
-from odoo.addons.portal.controllers.portal import CustomerPortal
+import flectra.addons.website_sale.controllers.main as main
+from flectra.addons.br_base.tools.fiscal import validate_cnpj, validate_cpf
+from flectra.addons.portal.controllers.portal import CustomerPortal
 
 
 class L10nBrWebsiteSale(main.WebsiteSale):

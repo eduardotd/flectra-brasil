@@ -6,8 +6,8 @@ import os
 import base64
 import logging
 from mock import patch
-from odoo.tests.common import TransactionCase
-from odoo.exceptions import UserError, ValidationError
+from flectra.tests.common import TransactionCase
+from flectra.exceptions import UserError, ValidationError
 
 _logger = logging.getLogger(__name__)
 
@@ -159,7 +159,7 @@ class TestBase(TransactionCase):
         partner.country_id = self.env.ref('base.br').id
         partner._display_address()
 
-    @patch('odoo.addons.br_base.models.res_partner.consulta_cadastro')
+    @patch('flectra.addons.br_base.models.res_partner.consulta_cadastro')
     def test_consulta_cadastro(self, consulta):
         partner = self.env['res.partner'].create({
             'name': 'Empresa',

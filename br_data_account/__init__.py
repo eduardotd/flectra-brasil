@@ -6,7 +6,7 @@
 def post_init(cr, registry):
     """Import CSV data as it is faster than xml and because we can't use
     noupdate anymore with csv"""
-    from odoo.tools import convert_file
+    from flectra.tools import convert_file
     filename = 'data/br_account.cnae.csv'
     convert_file(cr, 'br_data_account', filename, None, mode='init',
                  noupdate=True, kind='init', report=None)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
 
     <record model="ir.ui.view" id="br_product_fiscal_classification_wizard">
         <field name="name">br_product_fiscal_classification.wizard.form</field>
@@ -40,4 +40,4 @@
               name="Importar Tabela IBPT"/>
 
 
-</odoo>
+</flectra>

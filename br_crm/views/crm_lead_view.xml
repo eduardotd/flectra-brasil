@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <!-- CRM Lead Form View  -->
     <record model="ir.ui.view" id="br_crm_case_form_view_leads1">
         <field name="name">br_crm.leads1</field>
@@ -38,4 +38,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>

@@ -1,4 +1,4 @@
-odoo.define('br_website_sale.address', function (require) {
+flectra.define('br_website_sale.address', function (require) {
     "use strict";
 
     var ajax = require('web.ajax');

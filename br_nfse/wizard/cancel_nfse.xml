@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
     <record model="ir.ui.view" id="view_wizard_cancel_nfse">
         <field name="name">wizard.cancel.nfse.form</field>
         <field name="model">wizard.cancel.nfse</field>
@@ -18,4 +18,4 @@
             </form>
         </field>
     </record>
-</odoo>
+</flectra>

@@ -11,10 +11,10 @@ import base64
 import logging
 from datetime import datetime
 
-from odoo import api, fields, models, _
-from odoo.exceptions import UserError
-from odoo.addons.base.ir.ir_actions_report import _get_wkhtmltopdf_bin
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
+from flectra import api, fields, models, _
+from flectra.exceptions import UserError
+from flectra.addons.base.ir.ir_actions_report import _get_wkhtmltopdf_bin
+from flectra.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
 
 _logger = logging.getLogger(__name__)
 

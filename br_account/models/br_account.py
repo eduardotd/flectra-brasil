@@ -5,11 +5,11 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-from odoo import api, fields, models
-from odoo.addons import decimal_precision as dp
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.addons import decimal_precision as dp
+from flectra.exceptions import UserError
 
-from odoo.addons.br_base.tools import fiscal
+from flectra.addons.br_base.tools import fiscal
 
 
 class BrAccountCFOP(models.Model):
@@ -274,7 +274,7 @@ class AccountDocumentRelated(models.Model):
         if self.inscr_est:
             uf = self.state_id and self.state_id.code.lower() or ''
             try:
-                mod = __import__('odoo.addons.br_base.tools.fiscal',
+                mod = __import__('flectra.addons.br_base.tools.fiscal',
                                  globals(), locals(), 'fiscal')
 
                 validate = getattr(mod, 'validate_ie_%s' % uf)

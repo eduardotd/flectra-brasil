@@ -3,8 +3,8 @@
 # © 2016 Danimar Ribeiro, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import models, fields
-from odoo.addons import decimal_precision as dp
+from flectra import models, fields
+from flectra.addons import decimal_precision as dp
 
 COMPANY_FISCAL_TYPE = [
     ('1', 'Simples Nacional'),

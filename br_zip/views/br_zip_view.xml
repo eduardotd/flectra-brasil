@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <record model="ir.ui.view" id="view_br_zip_tree">
         <field name="name">br.zip</field>
         <field name="model">br.zip</field>
@@ -41,4 +41,4 @@
         <field name="view_id" ref="view_br_zip_tree"/>
     </record>
 
-</odoo>
+</flectra>

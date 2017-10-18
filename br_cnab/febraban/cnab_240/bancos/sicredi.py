@@ -5,8 +5,8 @@
 import re
 from ..cnab_240 import Cnab240
 from decimal import Decimal
-from odoo.exceptions import UserError
-from odoo import fields
+from flectra.exceptions import UserError
+from flectra import fields
 
 
 class Sicredi240(Cnab240):

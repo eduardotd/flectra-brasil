@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
     <record model="ir.ui.view" id="view_wizard_export_nfe">
         <field name="name">wizard.export.nfe.form</field>
         <field name="model">wizard.export.nfe</field>
@@ -42,4 +42,4 @@
         action="action_export_nfe_wizard"
         sequence="13" />
 
-</odoo>
+</flectra>

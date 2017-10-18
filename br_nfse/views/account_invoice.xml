@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
 
     <record id="view_br_nfse_account_invoice_form" model="ir.ui.view">
         <field name="name">view_br_nfse.account.invoice.form</field>
@@ -22,4 +22,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>

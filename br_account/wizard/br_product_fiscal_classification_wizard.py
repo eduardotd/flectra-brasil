@@ -5,8 +5,8 @@
 import base64
 import tempfile
 import csv
-from odoo import api, fields, models
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.exceptions import UserError
 import logging
 
 _logger = logging.getLogger(__name__)

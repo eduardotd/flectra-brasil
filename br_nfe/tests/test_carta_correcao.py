@@ -6,8 +6,8 @@ import base64
 import os
 
 from mock import patch
-from odoo.exceptions import UserError
-from odoo.tests.common import TransactionCase
+from flectra.exceptions import UserError
+from flectra.tests.common import TransactionCase
 from pytrustnfe.xml import sanitize_response
 
 
@@ -202,7 +202,7 @@ class TestCartaCorrecao(TransactionCase):
         with self.assertRaises(UserError):
             self.carta_wizard_long.send_letter()
 
-    @patch('odoo.addons.br_nfe.wizard.carta_correcao_eletronica.recepcao_evento_carta_correcao')  # noqa
+    @patch('flectra.addons.br_nfe.wizard.carta_correcao_eletronica.recepcao_evento_carta_correcao')  # noqa
     def test_carta_correca_eletronica(self, recepcao):
         # Mock o retorno da CCE
         xml_recebido = open(os.path.join(

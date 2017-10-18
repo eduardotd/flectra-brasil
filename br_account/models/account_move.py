@@ -2,8 +2,8 @@
 # © 2016 Alessandro Fernandes Martini, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tools import float_compare
-from odoo import models
+from flectra.tools import float_compare
+from flectra import models
 
 
 class AccountMoveLine(models.Model):

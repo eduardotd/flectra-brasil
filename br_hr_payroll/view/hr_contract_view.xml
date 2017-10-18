@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<odoo>
+<flectra>
     <record model="ir.ui.view" id="view_br_hr_contract_form">
         <field name="name">br_hr_contract.form</field>
         <field name="model">hr.contract</field>
@@ -50,4 +50,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>

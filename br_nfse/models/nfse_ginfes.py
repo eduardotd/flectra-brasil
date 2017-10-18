@@ -8,9 +8,9 @@ import time
 import base64
 import logging
 from datetime import datetime
-from odoo import api, fields, models
-from odoo.exceptions import UserError
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
+from flectra import api, fields, models
+from flectra.exceptions import UserError
+from flectra.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
 
 _logger = logging.getLogger(__name__)
 

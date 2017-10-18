@@ -5,8 +5,8 @@
 from datetime import datetime
 from random import SystemRandom
 
-from odoo import api, fields, models
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.exceptions import UserError
 
 
 TYPE2EDOC = {

@@ -5,8 +5,8 @@
 import os
 import base64
 from mock import patch
-from odoo.tests.common import TransactionCase
-from odoo.exceptions import UserError
+from flectra.tests.common import TransactionCase
+from flectra.exceptions import UserError
 from pytrustnfe.xml import sanitize_response
 
 
@@ -287,7 +287,7 @@ class TestNFeBrasil(TransactionCase):
             partner_id=self.partner_exterior.id
         ))
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_computed_fields(self, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -307,7 +307,7 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(invoice.nfe_exception, False)
             self.assertEquals(invoice.sending_nfe, True)
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_print_actions(self, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -334,7 +334,7 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(danfe['report_name'],
                               'br_nfe.main_template_br_nfe_danfe')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_check_invoice_eletronic_values(self, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -352,7 +352,7 @@ class TestNFeBrasil(TransactionCase):
         with self.assertRaises(UserError):
             self.inv_incomplete.action_invoice_open()
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_send_nfe(self, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -364,9 +364,9 @@ class TestNFeBrasil(TransactionCase):
             with self.assertRaises(Exception):
                 invoice_eletronic.action_send_eletronic_invoice()
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.retorno_autorizar_nfe')
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.autorizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.retorno_autorizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.autorizar_nfe')
     def test_wrong_xml_schema(self, autorizar, ret_autorizar, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -399,9 +399,9 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(invoice_eletronic.state, 'error')
             self.assertEquals(invoice_eletronic.codigo_retorno, '225')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.retorno_autorizar_nfe')
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.autorizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.retorno_autorizar_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.autorizar_nfe')
     def test_nfe_with_concept_error(self, autorizar, ret_autorizar, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -435,8 +435,8 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(invoice_eletronic.state, 'error')
             self.assertEquals(invoice_eletronic.codigo_retorno, '694')
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.recepcao_evento_cancelamento')  # noqa
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.recepcao_evento_cancelamento')  # noqa
     def test_nfe_cancelamento_ok(self, cancelar, validar):
         validar.return_value = ''
         for invoice in self.invoices:
@@ -463,7 +463,7 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(invoice_eletronic.mensagem_retorno,
                               "Cancelamento homologado fora de prazo")
 
-    @patch('odoo.addons.br_nfe.models.invoice_eletronic.valida_nfe')
+    @patch('flectra.addons.br_nfe.models.invoice_eletronic.valida_nfe')
     def test_invoice_eletronic_functions(self, validar):
         validar.return_value = ''
         for invoice in self.invoices:

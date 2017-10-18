@@ -6,7 +6,7 @@ import os
 import base64
 import logging
 from mock import patch
-from odoo.tests.common import TransactionCase
+from flectra.tests.common import TransactionCase
 
 _logger = logging.getLogger(__name__)
 
@@ -182,7 +182,7 @@ class TestNFeBrasil(TransactionCase):
             # documento eletronico
             self.assertEquals(inv_eletr.partner_id, invoice.partner_id)
 
-    @patch('odoo.addons.br_nfse.models.invoice_eletronic.teste_envio_lote_rps')
+    @patch('flectra.addons.br_nfse.models.invoice_eletronic.teste_envio_lote_rps')
     def test_nfse_sucesso_homologacao(self, envio_lote):
         for invoice in self.invoices:
             # Confirmando a fatura deve gerar um documento eletrônico
@@ -204,7 +204,7 @@ class TestNFeBrasil(TransactionCase):
             self.assertEqual(invoice_eletronic.codigo_retorno, '100')
             self.assertEqual(len(invoice_eletronic.eletronic_event_ids), 1)
 
-    @patch('odoo.addons.br_nfse.models.invoice_eletronic.cancelamento_nfe')
+    @patch('flectra.addons.br_nfse.models.invoice_eletronic.cancelamento_nfe')
     def test_nfse_cancel(self, cancelar):
         for invoice in self.invoices:
             # Confirmando a fatura deve gerar um documento eletrônico
@@ -232,7 +232,7 @@ class TestNFeBrasil(TransactionCase):
             self.assertEquals(invoice_eletronic.mensagem_retorno,
                               "Nota Fiscal Paulistana Cancelada")
 
-    @patch('odoo.addons.br_nfse.models.invoice_eletronic.cancelamento_nfe')
+    @patch('flectra.addons.br_nfse.models.invoice_eletronic.cancelamento_nfe')
     def test_nfse_cancelamento_erro(self, cancelar):
         for invoice in self.invoices:
             # Confirmando a fatura deve gerar um documento eletrônico

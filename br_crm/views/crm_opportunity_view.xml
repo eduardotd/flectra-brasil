@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
     <!-- CRM Opportunity Form View  -->
     <record model="ir.ui.view" id="br_crm_case_form_view_oppor1">
         <field name="name">br_crm.opportunities1</field>
@@ -45,4 +45,4 @@
             </field>
         </field>
     </record>
-</odoo>
+</flectra>

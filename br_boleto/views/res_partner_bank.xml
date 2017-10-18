@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
     <record id="view_boleto_res_partner_bank" model="ir.ui.view">
         <field name="name">res_partner_bank_boleto.partner.bank.form</field>
         <field name="model">res.partner.bank</field>
@@ -10,4 +10,4 @@
             </field>
         </field>
     </record>
-</odoo>
+</flectra>

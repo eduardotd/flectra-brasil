@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="view_br_nfe_volume_tree" model="ir.ui.view">
         <field name="name">br.nfe.nfe.volume</field>
@@ -43,4 +43,4 @@
     </record>
 
 
-</odoo>
+</flectra>

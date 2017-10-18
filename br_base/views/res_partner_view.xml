@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <!-- Parceiro -->
     <record id="view_br_base_partner_filter" model="ir.ui.view">
@@ -103,4 +103,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>

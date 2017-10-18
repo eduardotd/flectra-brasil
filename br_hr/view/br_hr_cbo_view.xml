@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
      <record id="view_br_hr_cbo_tree" model="ir.ui.view">
         <field name="name">br_hr.cbo.tree</field>
         <field name="model">br_hr.cbo</field>
@@ -47,4 +47,4 @@
     <menuitem action="action_br_hr_cbo" id="menu_view_post_cbo_form"
         parent="hr.menu_human_resources_configuration" name="CBO" sequence="1"/>
 
-</odoo>
+</flectra>

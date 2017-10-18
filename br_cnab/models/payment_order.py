@@ -6,8 +6,8 @@ import time
 import base64
 from ..febraban.cnab import Cnab
 from datetime import datetime
-from odoo import api, fields, models
-from odoo.exceptions import UserError
+from flectra import api, fields, models
+from flectra.exceptions import UserError
 
 
 class PaymentOrder(models.Model):

@@ -6,8 +6,8 @@
 
 from datetime import timedelta
 
-from odoo import models, fields, api
-from odoo.addons import decimal_precision as dp
+from flectra import models, fields, api
+from flectra.addons import decimal_precision as dp
 
 
 class SaleOrder(models.Model):

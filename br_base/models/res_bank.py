@@ -6,8 +6,8 @@
 # © 2016 Danimar Ribeiro <danimaribeiro@gmail.com>, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import models, fields, api
-from odoo.addons.base.res.res_bank import sanitize_account_number
+from flectra import models, fields, api
+from flectra.addons.base.res.res_bank import sanitize_account_number
 
 
 class ResBank(models.Model):

@@ -8,10 +8,10 @@ import base64
 import logging
 from lxml import etree
 from datetime import datetime
-from odoo import api, fields, models
-from odoo.exceptions import UserError
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
-from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DATE_FORMAT
+from flectra import api, fields, models
+from flectra.exceptions import UserError
+from flectra.tools import DEFAULT_SERVER_DATETIME_FORMAT as DTFT
+from flectra.tools import DEFAULT_SERVER_DATE_FORMAT as DATE_FORMAT
 
 _logger = logging.getLogger(__name__)
 

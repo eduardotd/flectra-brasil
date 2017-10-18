@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
 
     <menuitem sequence="3"
         id="menu_br_payments"
@@ -86,4 +86,4 @@
               id="menu_action_receivable_move_line"
               parent="menu_br_payments"/>
 
-</odoo>
+</flectra>

@@ -2,9 +2,9 @@
 # © 2016 Danimar Ribeiro, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.addons.br_boleto.boleto.document import getBoletoSelection
-from odoo import api, fields, models
-from odoo.addons import decimal_precision as dp
+from flectra.addons.br_boleto.boleto.document import getBoletoSelection
+from flectra import api, fields, models
+from flectra.addons import decimal_precision as dp
 
 selection = getBoletoSelection()
 IMPLEMENTADOS = (u'1', u'3', u'4', u'7', u'9', u'10')

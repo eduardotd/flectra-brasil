@@ -11,7 +11,7 @@ import re
 import logging
 import base64
 from datetime import datetime
-from odoo import models, fields, api
+from flectra import models, fields, api
 
 _logger = logging.getLogger(__name__)
 

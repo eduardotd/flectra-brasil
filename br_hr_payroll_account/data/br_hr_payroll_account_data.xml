@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 <!-- HR SALARY RULES-->
     <record id="br_hr_payroll.hr_salary_rule_inss" model="hr.salary.rule">
         <field name="account_credit" search="[('code', '=', '2.1.4.03.007')]"/>
@@ -105,4 +105,4 @@
         <field name="account_debit" search="[('code', '=', '2.1.3.01.001')]"/>
     </record>
 
-</odoo>
+</flectra>

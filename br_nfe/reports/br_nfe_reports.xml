@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<odoo>
+<flectra>
     <data>
         <report
             id="report_br_nfe_danfe"
@@ -9,4 +9,4 @@
             file="br_nfe.main_template_br_nfe_danfe"
             name="br_nfe.main_template_br_nfe_danfe" />
     </data>
-</odoo>
+</flectra>

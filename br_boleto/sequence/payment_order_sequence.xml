@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
+<flectra>
 
     <record model="ir.sequence" id="payment_order_seq_id" >
         <field name="name">Payment Order</field>
@@ -8,4 +8,4 @@
         <field name="prefix">O.C. </field>
     </record>
 
-</odoo>
+</flectra>

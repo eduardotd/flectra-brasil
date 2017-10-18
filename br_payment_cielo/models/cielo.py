@@ -7,13 +7,13 @@ import json
 import logging
 import requests
 
-from odoo import api, models, fields
-from odoo.http import request
+from flectra import api, models, fields
+from flectra.http import request
 from datetime import datetime
 
 _logger = logging.getLogger(__name__)
 
-odoo_request = request
+flectra_request = request
 
 
 class AcquirerCielo(models.Model):
@@ -31,7 +31,7 @@ class AcquirerCielo(models.Model):
     @api.multi
     def cielo_form_generate_values(self, values):
         """ Função para gerar HTML POST da Cielo """
-        order = odoo_request.website.sale_get_order()
+        order = flectra_request.website.sale_get_order()
         if not order or not order.payment_tx_id:
             return {
                 'checkout_url': '/shop/payment',

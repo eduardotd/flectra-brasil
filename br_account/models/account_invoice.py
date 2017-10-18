@@ -3,9 +3,9 @@
 # © 2016 Danimar Ribeiro, Trustcode
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, fields, models, _
-from odoo.exceptions import UserError
-from odoo.addons import decimal_precision as dp
+from flectra import api, fields, models, _
+from flectra.exceptions import UserError
+from flectra.addons import decimal_precision as dp
 
 
 class AccountInvoice(models.Model):

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<odoo>
+<flectra>
 
     <report
         id="report_br_nfse_danfe_simpliss"
@@ -406,4 +406,4 @@
     </template>
 
 
-</odoo>
+</flectra>

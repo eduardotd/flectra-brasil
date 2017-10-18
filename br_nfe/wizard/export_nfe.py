@@ -7,7 +7,7 @@ import io
 import base64
 import os.path
 from zipfile import ZipFile
-from odoo import api, fields, models
+from flectra import api, fields, models
 
 
 class ExportNfe(models.TransientModel):
@@ -24,7 +24,7 @@ class ExportNfe(models.TransientModel):
         'state', readonly=True, default='init')
 
     def _save_zip(self, xmls):
-        tmp = '/tmp/odoo/nfse-export/'
+        tmp = '/tmp/flectra/nfse-export/'
 
         try:
             os.makedirs(tmp)

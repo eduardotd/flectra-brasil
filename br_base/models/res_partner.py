@@ -11,9 +11,9 @@ import re
 import base64
 import logging
 
-from odoo import models, fields, api, _
-from odoo.addons.br_base.tools import fiscal
-from odoo.exceptions import UserError
+from flectra import models, fields, api, _
+from flectra.addons.br_base.tools import fiscal
+from flectra.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
 
@@ -96,7 +96,7 @@ class ResPartner(models.Model):
     def _validate_ie_param(self, uf, inscr_est):
         try:
             mod = __import__(
-                'odoo.addons.br_base.tools.fiscal', globals(),
+                'flectra.addons.br_base.tools.fiscal', globals(),
                 locals(), 'fiscal')
 
             validate = getattr(mod, 'validate_ie_%s' % uf)
