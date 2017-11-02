@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<flectra>
 
     <record id="br_purchase_product_template_form" model="ir.ui.view">
         <field name="name">br_purchase.product.template.form</field>
@@ -12,4 +12,4 @@
         </field>
     </record>
 
-</odoo>
+</flectra>
